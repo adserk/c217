@@ -1,0 +1,6 @@
+echo "Your  username is `whoami`"
+echo "Today's date is `date +%d%m%Y`"
+echo "The time is `date +%T`"
+echo "The current directory is `pwd`"
+echo "Files in this folder: `ls`"
+echo "Biggest file size in this folder is `du -sh | sort -n -r | head -1`"
