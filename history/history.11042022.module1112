@@ -1,0 +1,992 @@
+    1  ls
+    2  pwd
+    3  cd /
+    4  pwd
+    5  cd /var/log
+    6  pwd
+    7  cd ..
+    8  pwd
+    9  ls
+   10  ls -ltr
+   11  ls -l
+   12  cd home
+   13  cd 
+   14  pwd
+   15  ls man
+   16  man
+   17  ls
+   18  pwd
+   19  man ls
+   20  pwd
+   21  cd /var
+   22  ls -h
+   23  ls
+   24  ls -ltr
+   25  ls -s -r
+   26  ls
+   27  ls 
+   28  man ls
+   29  ls -S -r
+   30  ls -S
+   31  ls -s -S -r
+   32  ls -s -S
+   33  uname
+   34  history > kresda.220405.module
+   35  cd
+   36  ls
+   37  cd /
+   38  cd
+   39  ls
+   40  cd /
+   41  ls
+   42  cd
+   43  pwd
+   44  touch Algo1
+   45  ls
+   46  cd ..
+   47  ls
+   48  cd
+   49  ls
+   50  cd 
+   51  ls
+   52  cd ..
+   53  pwd
+   54  ls
+   55  pwd
+   56  cd Algo1
+   57  ls
+   58  cd ec2-user
+   59  ls
+   60  pwd
+   61  cd
+   62  cd /var/log
+   63  ls
+   64  cd
+   65  ls
+   66  pwd
+   67  cd var
+   68  ls 
+   69  cd 
+   70  pwd
+   71  ls
+   72  cd Algo1
+   73  cd
+   74  rm Algo1
+   75  ls
+   76  mkdir Algo1
+   77  cd Algo1
+   78  cd /
+   79  ls
+   80  cd ..
+   81  pwd
+   82  cd ..
+   83  pwd
+   84  cd Algo1
+   85  cd home
+   86  ls
+   87  cd ec2-user
+   88  ls
+   89  cd Algo1 
+   90  mkdir config bin logs scripts
+   91  ls
+   92  cd config
+   93  touch config.config variables
+   94  ls
+   95  cd ..
+   96  ls
+   97  cd scripts
+   98  touch start.sh start.sh admin.sh
+   99  ls
+  100  cd ..
+  101  ls
+  102  cd logs
+  103  touch today.log
+  104  ls
+  105  cd
+  106  ls
+  107  pwd
+  108  cd Algo1
+  109  ls -R
+  110  ls
+  111  ls -ltr
+  112  man ls
+  113  ls -R
+  114  cd config
+  115  ls
+  116  rm variables
+  117  ls
+  118  cd ..
+  119  ls
+  120  rm bin
+  121  rm -r bin
+  122  ls
+  123  mkdir bin
+  124  ls
+  125  cd logs
+  126  ls
+  127  mkdir oldlogs
+  128  cd oldlogs
+  129  mkdir 2019 2018 2017
+  130  ls
+  131  cd 2017
+  132  touch 2017.log.
+  133  cd ..
+  134  ls
+  135  cd 2018
+  136  touch 2018.log.
+  137  cd ..
+  138  cd 2019
+  139  touch 2019.log.
+  140  cd ..
+  141  cd 
+  142  ls
+  143  cd Algo1
+  144  ls
+  145  cd logs
+  146  ls
+  147  rm -r oldlogs
+  148  ls
+  149  cd
+  150  ls
+  151  cd /
+  152  ls
+  153  cd home
+  154  ls
+  155  find /home -name*.jpg
+  156  cd /
+  157  find /home -name*.jpg
+  158  find /home -name*.sh.
+  159  cd home
+  160  find /home -name*.sh.
+  161  cd
+  162  ls
+  163  find /home -name*.sh.
+  164  ls
+  165  cd Algo1
+  166  ls
+  167  cd
+  168  ls
+  169  cd /
+  170  cd home
+  171  find -name*.sh.
+  172  find /home -name*.sh.
+  173  ls
+  174  cd
+  175  find /home -name *.sh.
+  176  ls
+  177  find . -name *.sh.
+  178  find . -name *.sh
+  179  pwd
+  180  ls
+  181  cd Algo1
+  182  ls
+  183  cd scripts
+  184  ls
+  185  rm s*.sh
+  186  ls
+  187  man rm
+  188  cd
+  189  cd /
+  190  sudo yum install git
+  191  git
+  192  cd
+  193  cd ~
+  194  pwd
+  195  vi fixGenerator.sh
+  196  chmod 744 fixGenerator.sh
+  197  ./fixGenerator.sh &
+  198  ls
+  199  ls -ltr
+  200  cat fixGenerator.sh 
+  201  cat -n fixGenerator.sh 
+  202  cat fixlog20220406135852.log > newlog.log
+  203  ls
+  204  mkdir logs
+  205  ls
+  206  mv newlog.log logs/.
+  207  ls
+  208  pwd
+  209  ls
+  210  cd logs
+  211  ls
+  212  cat newlog.log 
+  213  cd ..
+  214  pwd
+  215  ls
+  216  cat fixlog20220406135852.log 
+  217  cd logs
+  218  cat newlog.log 
+  219  cd
+  220  ls
+  221  cat fixlog20220406135852.log >> newlog.log /logs
+  222  cat fixlog20220406135852.log >> newlog.log /logs.
+  223  ls
+  224  pwd
+  225  cat fixlog20220406135852.log >> newlog.log /home/ec2-user/logs
+  226  cd logs
+  227  ls
+  228  cat newlog.log 
+  229  cd
+  230  ls
+  231  rm newlog.log 
+  232  ls
+  233  cd logs
+  234  ln -s newlog.log Daily
+  235  ls -l newlog.log Daily
+  236  cd
+  237  man less
+  238  pwd
+  239  ls
+  240  cd logs
+  241  cat /home/ec2-user/logs/fixlog20220406135852.log >> newlog.log
+  242  cd ..
+  243  ls
+  244  cat  fixlog20220406135852.log >> /home/ec2-user/logs/newlog.log
+  245  cd logs
+  246  ls -ltr
+  247  cd ..
+  248  ls
+  249  cat fixlog20220406135852.log | less
+  250  grep 35=D fixlog20220406135852.log 
+  251  grep 35=D fixlog20220406135852.log >> /home/ec2-user/logs/newOrders.log
+  252  ls
+  253  ls -ltr
+  254  cat s\ -ppattern\ neworder 
+  255  ls
+  256  cd logs
+  257  ls
+  258  cat newOrders.log 
+  259  ls
+  260  cp newOrders.log /home/ec2-user
+  261  cd
+  262  ls
+  263  rm s\ -ppattern\ neworder 
+  264  wc -l newOrders.log 
+  265  pwd
+  266  ls
+  267  grep 54=1 fixlog20220406135852.log >> /home/ec2-user/logs/buyMessages.lo
+  268  ls
+  269  cd logs
+  270  ls
+  271  ls buyMessages.log 
+  272  cat buyMessages.log 
+  273  wc -l buyMessages.log 
+  274  grep -c 35=D* buyMessages.log 
+  275  grep -c 10=252* buyMessages.log
+  276  man grep
+  277  cd
+  278  ls
+  279  cd logs
+  280  ls
+  281  cd
+  282  grep -v 35=D* fixlog20220406135852.log >> /home/ec2-user/logs/noNewOrders.log
+  283  cd logs
+  284  ls
+  285  ls -ltr
+  286  wc -l noNewOrders.log 
+  287  grep -v 35=D fixlog20220406135852.log >> /home/ec2-user/logs/noNewOrders.log
+  288  rm noNewOrders.log 
+  289  cd
+  290  ls
+  291  grep -v 35=D fixlog20220406135852.log >> /home/ec2-user/logs/noNewOrders.log
+  292  cd logs
+  293  ls -ltr
+  294  man wc
+  295  grep -c 35=D* noNewOrders.log 
+  296  cat noNewOrders.log 
+  297  grep -c 35=D noNewOrders.log 
+  298  wc noNewOrders.log 
+  299  man wc
+  300  wc -w
+  301  wc -w noNewOrders.log 
+  302  tail -n 5 noNewOrders.log 
+  303  cd
+  304  ls
+  305  grep Apple fixlog20220406135852.log 
+  306  grep -c Apple* fixlog20220406135852.log 
+  307  grep -c Apple fixlog20220406135852.log 
+  308  ls -ltr
+  309  ln -s fixGenerator.sh fix
+  310  ls
+  311  tail fix
+  312  tail -f fixlog20220406135852.log | grep 35=D
+  313  cd
+  314  ls
+  315  mkdir superLogs
+  316  ls
+  317  cp -R logs ./superLogs 
+  318  ls
+  319  cd superLogs/
+  320  ls
+  321  cd logs
+  322  ls
+  323  cd
+  324  ls
+  325  cd superLogs/
+  326  ls
+  327  rm -r logs
+  328  ls
+  329  cd ..
+  330  cp -RT logs ./superLogs
+  331  ls
+  332  cd superLogs/
+  333  ls
+  334  cd
+  335  ls
+  336  wc -w fixlog20220406135852.log 
+  337  cd
+  338  ls
+  339  STOCK=AAPL
+  340  echo STOCK
+  341  STOCK="AAPL"
+  342  echo STOCK
+  343  echo $STOCK
+  344  STOCK="AAPL_US"
+  345  echo $STOCK
+  346  PRICE="290.84"
+  347  echo "The current price of $STOCK is $PRICE"
+  348  whoami
+  349  WHOAMI=`whoami`
+  350  echo $WHOAMI
+  351  man uname
+  352  SERVERTYPE=$(uname)
+  353  echo SERVERTYPE
+  354  echo $SERVERTYPE
+  355  CMD=`uname -i`
+  356  echo "CMD"
+  357  echo "$CMD"
+  358  echo `$CMD`
+  359  ls
+  360  echo "$PRICE"
+  361  CMD=`uname -i`
+  362  echo "CMD"
+  363  echo "$CMD"
+  364  echo $CMD
+  365  cd
+  366  pwd
+  367  mkdir scripts
+  368  echo $PATH
+  369  pwd
+  370  ls
+  371  export PATH=$PATH:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+  372  echo $PATH
+  373  ls
+  374  rm -r Algo1
+  375  ls
+  376  mkdir Payment1
+  377  cd Payment1
+  378  mkdir logs configuration scripts
+  379  ls
+  380  cd scripts/
+  381  touch start.sh
+  382  ls
+  383  cd ..
+  384  cd configuration/
+  385  touch instance.properties
+  386  ls -ltr
+  387  chmod u=rwx,og=r instance.properties 
+  388  ls -ltr
+  389  cd ..
+  390  ls
+  391  cd logs
+  392  ls
+  393  cd ..
+  394  cd scripts/
+  395  ls
+  396  ls -ltr
+  397  chmod o+w start.sh 
+  398  ls start.sh 
+  399  ls -ltr start.sh 
+  400  cd
+  401  ls
+  402  cat man > cat.output
+  403  man cat > cat.output
+  404  ls
+  405  ls -ltr
+  406  chmod g+x cat.output 
+  407  ls -ltr
+  408  cd 
+  409  pwd
+  410  ps -ef
+  411  whoami
+  412  ps -ef | grep -R ec2-user
+  413  ps -ef | grep -i ec2-user
+  414  man grep
+  415  ps -ef | grep -i ec2-user*
+  416  ps -ef | grep -i *ec2-user
+  417  ps -ef | grep -i *"ec2-user"
+  418  ps -ef | grep -i .*"ec2-user"
+  419  ls
+  420  ps -u ec2-user
+  421  ps -u ec2-user | grep -R ec2user
+  422  ps -ef ec2-user | grep -R ec2user
+  423  ps -u | grep -R ec2user
+  424  ps -u | grep -R ec2-user
+  425  sudo ps -ef | grep {ec2-user}
+  426  ps -ef | grep {ec2-user}
+  427  ps -ef | grep *{ec2-user}
+  428  ps -ef | grep -v {ec2-user}
+  429  pstree -shapu $$
+  430  ps -ef user,pid,cmd | grep -v {ec2-user}
+  431  ps -ef user,pid,cmd | grep {ec2-user}
+  432  ps -eo user,pid,cmd | grep {ec2-user}
+  433  ps -eo pid
+  434  ps -ef pid
+  435  ps -eo pid >> lis
+  436  ls
+  437  cat list
+  438  sleep 300 &
+  439  ps -ef 
+  440  ps -ef | grep -v {sleep 300 &}
+  441  ps -ef | grep {sleep 300 &}
+  442  ps -ef | grep `sleep 300 &`
+  443  ps -ef
+  444  whoami
+  445  ps -ef | grep -R ec2-user
+  446  ps -ef | grep -i ec2-user
+  447  man grep
+  448  ps -ef | grep -i ec2-user*
+  449  ps -ef | grep -i *ec2-user
+  450  ps -ef | grep -i *"ec2-user"
+  451  ps -ef | grep -i .*"ec2-user"
+  452  ls
+  453  ps -u ec2-user
+  454  ps -u ec2-user | grep -R ec2user
+  455  ps -ef ec2-user | grep -R ec2user
+  456  ps -u | grep -R ec2user
+  457  ps -u | grep -R ec2-user
+  458  sudo ps -ef | grep {ec2-user}
+  459  ps -ef | grep {ec2-user}
+  460  ps -ef | grep *{ec2-user}
+  461  ps -ef | grep -v {ec2-user}
+  462  pstree -shapu $$
+  463  ps -ef user,pid,cmd | grep -v {ec2-user}
+  464  ps -ef user,pid,cmd | grep {ec2-user}
+  465  ps -eo user,pid,cmd | grep {ec2-user}
+  466  ps -eo pid
+  467  ps -ef pid
+  468  ps -eo pid >> lis
+  469  ls
+  470  cat list
+  471  sleep 300 &
+  472  ps -ef 
+  473  ps -ef | grep -v {sleep 300 &}
+  474  ps -ef | grep {sleep 300 &}
+  475  ps -ef | grep `sleep 300 &`
+  476  ps -ef
+  477  whoami
+  478  ps -ef | grep -R ec2-user
+  479  ps -ef | grep -i ec2-user
+  480  man grep
+  481  ps -ef | grep -i ec2-user*
+  482  ps -ef | grep -i *ec2-user
+  483  ps -ef | grep -i *"ec2-user"
+  484  ps -ef | grep -i .*"ec2-user"
+  485  ls
+  486  ps -u ec2-user
+  487  ps -u ec2-user | grep -R ec2user
+  488  ps -ef ec2-user | grep -R ec2user
+  489  ps -u | grep -R ec2user
+  490  ps -u | grep -R ec2-user
+  491  sudo ps -ef | grep {ec2-user}
+  492  ps -ef | grep {ec2-user}
+  493  ps -ef | grep *{ec2-user}
+  494  ps -ef | grep -v {ec2-user}
+  495  pstree -shapu $$
+  496  ps -ef user,pid,cmd | grep -v {ec2-user}
+  497  ps -ef user,pid,cmd | grep {ec2-user}
+  498  ps -eo user,pid,cmd | grep {ec2-user}
+  499  ps -eo pid
+  500  ps -ef pid
+  501  ps -eo pid >> lis
+  502  ls
+  503  cat list
+  504  sleep 300 &
+  505  ps -ef 
+  506  ps -ef | grep -v {sleep 300 &}
+  507  ps -ef | grep {sleep 300 &}
+  508  ps -ef | grep `sleep 300 &`
+  509  ps -ef | grep {sleep 300 &}
+  510  ps -ef 
+  511  ps -a
+  512  ps -aux
+  513  ps -aux | grep sleep 300 &
+  514  sleep 300 &
+  515  ps -ef 
+  516  ps -aux | grep 18151
+  517  ps -aux | grep "sleep 300 $"
+  518  ps -ef | grep "sleep 300 $"
+  519  ps -ef | grep 18151
+  520  sleep 300 &
+  521  ps -ef | grep "sleep 300 $"
+  522  ps -ef | grep {sleep 300 &}
+  523  ps -ef | grep {sleep 300}
+  524  ps -ef
+  525  ps -eo user,pid,cmd | grep {sleep 300}
+  526  ps -ef
+  527  ps -ef | grep -i sleep 300
+  528  ps -ef | grep -i `sleep 300`
+  529  ps -ef
+  530  whoami
+  531  ps -ef | grep -R ec2-user
+  532  ps -ef | grep -i ec2-user
+  533  man grep
+  534  ps -ef | grep -i ec2-user*
+  535  ps -ef | grep -i *ec2-user
+  536  ps -ef | grep -i *"ec2-user"
+  537  ps -ef | grep -i .*"ec2-user"
+  538  ls
+  539  ps -u ec2-user
+  540  ps -u ec2-user | grep -R ec2user
+  541  ps -ef ec2-user | grep -R ec2user
+  542  ps -u | grep -R ec2user
+  543  ps -u | grep -R ec2-user
+  544  sudo ps -ef | grep {ec2-user}
+  545  ps -ef | grep {ec2-user}
+  546  ps -ef | grep *{ec2-user}
+  547  ps -ef | grep -v {ec2-user}
+  548  pstree -shapu $$
+  549  ps -ef user,pid,cmd | grep -v {ec2-user}
+  550  ps -ef user,pid,cmd | grep {ec2-user}
+  551  ps -eo user,pid,cmd | grep {ec2-user}
+  552  ps -eo pid
+  553  ps -ef pid
+  554  ps -eo pid >> lis
+  555  ls
+  556  cat list
+  557  sleep 300 &
+  558  ps -ef 
+  559  ps -ef | grep -v {sleep 300 &}
+  560  ps -ef | grep {sleep 300 &}
+  561  ps -ef | grep `sleep 300 &`
+  562  ps -ef | grep {sleep 300 &}
+  563  ps -ef 
+  564  ps -a
+  565  ps -aux
+  566  ps -aux | grep sleep 300 &
+  567  sleep 300 &
+  568  ps -ef 
+  569  ps -aux | grep 18151
+  570  ps -aux | grep "sleep 300 $"
+  571  ps -ef | grep "sleep 300 $"
+  572  ps -ef | grep 18151
+  573  sleep 300 &
+  574  ps -ef | grep "sleep 300 $"
+  575  ps -ef | grep {sleep 300 &}
+  576  ps -ef | grep {sleep 300}
+  577  ps -ef
+  578  ps -eo user,pid,cmd | grep {sleep 300}
+  579  ps -ef
+  580  ps -ef | grep -i sleep 300
+  581  ps -ef | grep -i `sleep 300`
+  582  man grep
+  583  ps -ef | grep -i "sleep 300"
+  584  ps -ef
+  585  ps -ef | grep -i "sleep 300"
+  586  kill pid 18297
+  587  ps -ef | grep -i "sleep 300"
+  588  pstree 
+  589  pstree -shapu $$
+  590  pgrep mtp | xargs -i pstree -ps {}
+  591  ps -ef | grep -i "sleep 300"
+  592  ps -eo pid | grep -i "sleep 300"
+  593  ps -eo pid | grep "sleep 300"
+  594  ps -ef | grep -i "sleep 300"
+  595  ps -ef pid | grep "sleep 300"
+  596  ps -ef | grep -i "sleep 300"
+  597  pgrep "sleep 300"
+  598  pidof "sleep 300"
+  599  ps -ef | grep -i "sleep 300"
+  600  kill ppid 17558
+  601  man kill
+  602  pgrep `sleep 300`
+  603  pgrep sleep 300
+  604  pgrep "$sleep 300"
+  605  pgrep "sleep 300"
+  606  ps -ef | grep -i "sleep 300"
+  607  pgrep -l "sleep 300"
+  608  ps -ef | grep -i "sleep 300"
+  609  top
+  610  top -u "root"
+  611  ping yahoo.com
+  612  traceroute yahoo.com > yahoo.route
+  613  ls
+  614  less yahoo.route 
+  615  netstat
+  616  netstat >> output
+  617  ls
+  618  cat output
+  619  mkdir network
+  620  ls
+  621  mv yahoo.route network
+  622  ls
+  623  cd network
+  624  ls
+  625  cd ..
+  626  mv output network
+  627  ifconfig
+  628  ps -eaf | grep sleep
+  629  kill pid 18863
+  630  ps -eaf | grep sleep
+  631  man ps
+  632  sleep 300 &
+  633  ps -eaf | grep sleep
+  634  kill pid 18925
+  635  kill pid "18925"
+  636  ps -ef
+  637  df
+  638  df -h
+  639  df -h > filesystem.usage
+  640  ls
+  641  df -h
+  642  df -kh ~
+  643  df -kh ~ > disk.usage
+  644  ls
+  645  du -ah
+  646  du -ah > usage2
+  647  ls
+  648  du /var
+  649  du /*var
+  650  du /var
+  651  pwd
+  652  ls
+  653  pwd
+  654  cd
+  655  ls
+  656  cd var
+  657  du -ah
+  658  cd
+  659  ls -ltr
+  660  cd logs
+  661  ls
+  662  cd
+  663  cd scripts/
+  664  ls
+  665  cd
+  666  du /*var
+  667  du /*bin –Lch
+  668  du –Lch
+  669  mkdir disk
+  670  ls
+  671  cp filesystem.usage disk
+  672  cp disk.usage disk
+  673  cp usage2 disk
+  674  cd disk
+  675  pwd
+  676  ls
+  677  tar -cvf disk.tar ./
+  678  ls
+  679  ls -ltr
+  680  tar -xvf disk.tar
+  681  ls
+  682  ls -ltr
+  683  tar -xvf disk.tar
+  684  ls -ltr
+  685  cd 
+  686  ls
+  687  cd disk
+  688  ls
+  689  rm disk.usage filesystem.usage usage2
+  690  ls
+  691  tar -xvf disk.tar
+  692  ls
+  693  gzip disk.tar
+  694  ls
+  695  touch newdisk
+  696  gunzip disk.tar.gz 
+  697  ls
+  698  ls disk.tar
+  699  tar -tvf disk.tar
+  700  tar rvf ./disk.tar ./newdisk 
+  701  tar -tvf disk.tar
+  702  ls
+  703  gzip disk.tar
+  704  cd
+  705  pwd
+  706  mkdir disk_output
+  707  pwd
+  708  cd disk_output/
+  709  pwd
+  710  ls
+  711  cd
+  712  ls
+  713  cd disk_output/
+  714  ls
+  715  cd
+  716  cd disk
+  717  ls
+  718  gunzip disk.tar.gz -C /home/ec2-user/disk_output
+  719  tar disk.tar.gz -C /home/ec2-user/disk_output
+  720  gunzip disk.tar.gz
+  721  tar disk.tar -C /home/ec2-user/disk_output
+  722  tar -xvf disk.tar -C /home/ec2-user/disk_output
+  723  man gzip
+  724  cd
+  725  gzip -r disk_output
+  726  ls
+  727  ls -ltr
+  728  cd disk_output
+  729  ls
+  730  du /*bin –Lch
+  731  ls var
+  732  ls -ltr
+  733  du ~ -Lch
+  734  du ~
+  735  less fixlog20220406135852.log 
+  736  grep 35=D fixlog20220406135852.log 
+  737  grep AAPL fixlog20220406135852.log  | wc -l
+  738  grep 39=4 fixlog20220406135852.log 
+  739  pwd
+  740  vi avengers
+  741  ls -ltr avengers 
+  742  vi avengers 
+  743  cat avengers 
+  744  ls -l avengers 
+  745  wc -l avengers 
+  746  vi fixGenerator.sh 
+  747  vi avengers 
+  748  rm avengers
+  749  vi avengers
+  750  sudo yum install git
+  751  git clone https://github.com/adserk/c217.git
+  752  ls
+  753  git status
+  754  cd c217
+  755  git status
+  756  vi test.file
+  757  git status
+  758  git add test.file
+  759  git status
+  760  git commit test.file
+  761  git remote add origin https://github.com/adserk/c217.git
+  762  git push -u origin
+  763  ls -ltr
+  764  cd
+  765  ls -ltr
+  766  wc -l avengers 
+  767  vi avengers 
+  768  wc -l avengers 
+  769  vi avengers 
+  770  cat avengers 
+  771  wc -l
+  772  wc -l avengers 
+  773  vi avengers 
+  774  wc avengers
+  775  man wc
+  776  vi avengers
+  777  vi avengers 
+  778  wc -l avengers
+  779  cat avengers
+  780  pwd
+  781  git status
+  782  vi avengers
+  783  mv avengers avenger.kresda
+  784  ls
+  785  mv avenger.kresda avengers.kresda
+  786  cd
+  787  cd ~
+  788  ./fixGenerator.sh &
+  789  ls 
+  790  ls -ltr
+  791  vi fixlog20220408145508.log 
+  792  grep 35=D > newOrders.log
+  793  grep fixlog20220408145508.log 35=D > newOrders.log
+  794  grep 35=D fixlog20220408145508.log > newOrders.log
+  795  ls
+  796  vi newOrders.log
+  797  vi newOrders.log 
+  798  mv newOrders.log newOrders.kresda.log
+  799  pwd
+  800  ls -ltr
+  801  ./fixGenerator.sh &
+  802  ls -ltr
+  803  sleep 10
+  804  sleep 500 &
+  805  sleep 700 &
+  806  jobs
+  807  man fg
+  808  fg %2
+  809  fg %3
+  810  sleep 10 && echo "Hello World" &
+  811  sleep 5 && echo "Hello World" 
+  812  sleep 5; echo "Hello World"
+  813  sleep 5; ls man
+  814  sleep 5; man ls
+  815  man grep
+  816  grep -v 35=D fixlog20220411103748.log > fixlog.log
+  817  grep 35=D fixlog.log || grep 35=8 fixlog.log
+  818  watch date
+  819  ./fixGenerator.sh &
+  820  watch "wc -l fixlog*"
+  821  ls -ltr
+  822  mkdir logs
+  823  cd logs
+  824  ls
+  825  mv logs oldlogs
+  826  cd
+  827  mv logs oldlogs
+  828  ls
+  829  mkdir logs
+  830  ls
+  831  mv fixlog20220411112307.log logs
+  832  cd logs
+  833  ls
+  834  cat fixlog*.log
+  835  cat fixlog*.log | sed 's/MTHREE/M3/' > fixlog2.log
+  836  ls
+  837  cat fixlog2.log
+  838  grep 35=8 fixlog2.log
+  839  grep -v 32=0 > fills.log
+  840  ls
+  841  vi fills.log
+  842  rm fills.log
+  843  ls
+  844  grep -v 32=0 fixlog2.log > fills.log
+  845  ls -ltr
+  846  grep 39=4 fixlog2.log 
+  847  grep 39=4 fixlog2.log > cancels.log
+  848  ls
+  849  touch partialFills.log
+  850  ls -ltr
+  851  grep 39=1 fills.log > partialFills.log 
+  852  ls -ltr
+  853  awk '{print} partialFills.log 
+  854  awk '{print}' partialFills.log 
+  855  sleep 100 &
+  856  ps -eaf
+  857  ps -eaf | grep 18738
+  858  variable=thepasswordofyouruser
+  859  ps -eaf | awk '{print$1}'
+  860  ps -eaf | awk '{print*}'
+  861  ps -eaf | awk '{print$1, $2}'
+  862  VARIABLE1=`ps -eaf | awk '{print$1}'`
+  863  VARIABLE1=`ps -eaf | awk '{print$2}'`
+  864  VARIABLE1=`ps -eaf | awk '{print$1}'`
+  865  VARIABLE2=`ps -eaf | awk '{print$2}'`
+  866  echo $VARIABLE1
+  867  echo $VARIABLE2
+  868  ls
+  869  ls partialFills.log 
+  870  cat partialFills.log 
+  871  grep 55 partialFills.log 
+  872  awk '{print $55, $11, $54, $31, $32, $17}' partialFills.log > parsedPartialFills.log
+  873  ls -ltr
+  874  vi parsedPartialFills.log 
+  875  cat parsedPartialFills.log 
+  876  ls
+  877  rm parsedPartialFills.log 
+  878  awk '{print $7, $9, $13, $10, $15, $16}' partialFills.log > parsedPartialFills.log
+  879  cat parsedPartialFills.log 
+  880  cat partialFills.log 
+  881  cat parsedPartialFills.log 
+  882  grep '55' partialFills.log | awk '{print $7}'
+  883  grep '55' partialFills.log
+  884  grep ' 55 ' partialFills.log
+  885  grep ' 55' partialFills.log
+  886  ls 
+  887  vi parsedPartialFills.log 
+  888  cp parsedPartialFills.log parsedPartialFillsBackUp.log 
+  889  vi parsedPartialFills.log 
+  890  cat parsedPartialFills
+  891  cat parsedPartialFills.log
+  892  ls -ltr
+  893  vi parsedPartialFills.log
+  894  while true; > do; > echo hello >> newlogfile; > LINE_NUMBER=`wc -l newlogfile | awk '{print$1}'`; > if [ $LINE_NUMBER -gt 5 ]; > then; > break; > else; > continue; > fi
+  895  ls
+  896  date + '%Y%m%d'
+  897  cd
+  898  date + '%Y%m%d'
+  899  man date
+  900  cd logs
+  901  vi parsedPartialFills
+  902  ls
+  903  vi parsedPartialFills.log
+  904  cp parsedPartialFills parsedPartialFills.module10.csv
+  905  cp parsedPartialFills.log parsedPartialFills.module10.csv
+  906  cp cancels.log cancels2.log
+  907  vi cancels2.log
+  908  wc -l cancels2.log
+  909  vi cancels2.log
+  910* diff cancels.log cancels2.l
+  911  diff -c cancels.log cancels2.log
+  912  man diff
+  913  history
+  914  cd
+  915  ls
+  916  history > history.220411
+  917  vi history.220411 
+  918  mkdir history
+  919  mv history.220411 history
+  920  ls
+  921  cd history
+  922  ls
+  923  TEXT="The number is"
+  924  for i in $(seq 3 $END); do echo $i; done
+  925  for i in $(seq 25 $END); do echo 'TEXT $i'; done
+  926  for i in $(seq 25 $END); do echo $TEXT $i; done
+  927  for i in $(seq 25 $END); do echo $TEXT $i; done >> for loop.out
+  928  for i in $(seq 25 $END); do echo $TEXT $i; done >> forloop.out
+  929  ls
+  930  vi forloop.out 
+  931  cat forloop.out | sed 's/the number is/the number is not/' > forloop2.out
+  932  ls
+  933  cat forloop2.out
+  934  rm forloop2.out
+  935  cat forloop.out | sed 's/The number is/The number is not/' > forloop2.out
+  936  cat forloop2.out
+  937  i=1
+  938  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+  939  i=3
+  940  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; f
+  941  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+  942  date
+  943  man date
+  944  date "$Y$m$d"
+  945  date "%Y%m%d"
+  946  date %D
+  947  date "%D"
+  948  date + "%D"
+  949  date + %D
+  950  date +%c
+  951  date +%D
+  952  date +%Y%m%d
+  953  date +%d%m%Y
+  954  TODAY=`date +%d%m%Y`
+  955  echo "TODAY"
+  956  echo 'TODAY'
+  957  echo `TODAY`
+  958  cat TODAY
+  959  TODAY="date +%d%m%Y"
+  960  echo 'TODAY'
+  961  echo $TODAY
+  962  echo `$TODAY`
+  963  GENDATE=`$TODAY`
+  964  GENDATE
+  965  ls
+  966  echo GENDATE
+  967  echo "GENDATE"
+  968  echo "$GENDATE"
+  969  output.log.$GENDATE
+  970  output.log.`$GENDATE`
+  971  output.log."$GENDATE"
+  972  output.log.{$GENDATE}
+  973  touch output.log.{$GENDATE}
+  974  ls
+  975  touch output.log.$GENDATE
+  976  ls
+  977  rm output.log.{*
+  978  ls
+  979  mkdir loops
+  980  mv forloops2.out forloop.out output.log.11042022 ./loops
+  981  ls -ltr
+  982  cd loops
+  983  ls
+  984  cd ..
+  985  mv forloop2.out ./loops
+  986  cd
+  987  pwd
+  988  cd history/
+  989  mv loops /home/ec2-user
+  990  cd
+  991  ls
+  992  history > history.$GENDATE.module1112
