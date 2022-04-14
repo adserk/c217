@@ -2,18 +2,23 @@
 
 lenarray="${#array[*]}"
 array=()
-#echo $lenarray
 
 echo "Enter a minimum of 5 numbers and up to 10"
 while [ $lenarray -lt 5	]
 do
 	read -p "Enter a number: " input
+	#Checks if the input is a number before executing the next line
+	while [[ ! "$input" =~ ^[0-9]+$ ]]
+	do 
+		echo "Not a number! Try again."
+		read -p "Enter a number: " input
+	done	
+
 	array+=($input)
 	lenarray="${#array[*]}"
 done
 
 echo "Your numbers are:  ${array[*]}"
-#echo $lenarray
 
 echo "Would you like to add more numbers?"
 read -p "Type y (Yes) or n (No): " more
@@ -25,6 +30,14 @@ then
 	while [ $lenarray -lt 10 ]
 	do
 		read -p "Enter a number: " input2
+		
+		#Checks if the input is a number before executing the next line
+        	while [[ ! "$input2" =~ ^[0-9]+$ ]]
+        	do
+                echo "Not a number! Try again."
+                read -p "Enter a number: " input2
+        	done		
+		
 		array+=($input2)
         	lenarray="${#array[*]}"
 	done
