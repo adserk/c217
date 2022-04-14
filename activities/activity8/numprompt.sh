@@ -5,7 +5,7 @@ array=()
 #echo $lenarray
 
 echo "Enter a minimum of 5 numbers and up to 10"
-while [ $lenarray -lt 2	]
+while [ $lenarray -lt 5	]
 do
 	read -p "Enter a number: " input
 	array+=($input)
