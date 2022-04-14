@@ -25,7 +25,7 @@ then
 	done
 
 else 
-	echo "Error: File already exist"
+	echo "Error: File already exist!"
 fi
 
-cat $fname
+#cat $fname
