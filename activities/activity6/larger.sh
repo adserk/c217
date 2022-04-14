@@ -1,11 +1,21 @@
 #!/bin/bash
 
-#a="4"
-#b="f"
+read -p "Enter a number a = " a
+while [[ ! "$a" =~ ^[0-9]+$ ]]
+do
+	echo "Not a number! Try again."
+        read -p "Enter a number a = " a
+done		
 
-read -p "Enter number a: " a
-read -p "Enter number b: " b
+read -p "Enter a number b = : " b
+while [[ ! "$b" =~ ^[0-9]+$ ]]
+do
+        echo "Not a number! Try again."
+        read -p "Enter a number b = " b
+done
 
+
+#Need to output the absolute value to find the difference between a and b
 sign () { echo "$(( $1 < 0 ? -1 : 1 ))"; }
 
 if [[ $a =~ [0-9] ]]
@@ -14,22 +24,20 @@ then
 	then
 		if [[ a -eq b ]]
 		then
-		echo "TRUE: a equals b"
+		echo "FALSE: a equals b"
 		echo "Difference between a and b is 0"
 		
 		elif [[ a -lt b ]]
 		then 
 		echo "FALSE: a is less than b"
 		diff=$((a-b))
+		echo "Difference between a and b is $(( diff * $(sign "$diff") ))"
 
 		else [[ a -gt b ]]
-		echo "FALSE: a is greater than b"
+		echo "TRUE: a is greater than b"
 		diff=$((a-b))
+		echo "Difference between a and b is $(( diff * $(sign "$diff") ))"
 
-		#else 
-		#echo "False: a not equal to b"
-	        #diff=$((a-b))
-		#echo "Difference between a and b is $(( diff * $(sign "$diff") ))"
 		fi
 	else 
 	echo "b is not a number"
@@ -37,9 +45,4 @@ then
 else "a is not a number"
 echo 
 fi 
-#Find the difference between a and b:
-#Need to output the absolute value
-#sign () { echo "$(( $1 < 0 ? -1 : 1 ))"; }
-#diff=$((a-b))
 
-#echo "Difference between a and #b  is $(( diff * $(sign "$diff") ))" 
