@@ -1,35 +1,37 @@
 #!/bin/bash
-#password="USER INPUT"
+
+echo "Length should be 8 or more characters 
+The password should contain numbers and letters
+There should be both uppercase and lowercase letters"
 
 read -p "Enter Password: " password
 
-#password="Op3rater"
-
-#echo "Your password: $password"
-
 #Checks if the password contains 8 or more characters
-if [[ ${#password} -ge 8 ]]
-then
-	echo "Password has 8 or more characters"
-else 
+	while [[ ${#password} -lt 8 ]]	
+	do 	
 	echo "Password requires 8 or more characters"
-fi
+	read -p "Enter Password with 8 or more characters: " password
+	done
 
 #Check if the password contains a number
-if [[ $password =~ [0-9] ]]
-then
-	echo "Password contains number"
-else 
+	while [[ ! $password =~ [0-9] ]]
+	do 
 	echo "Password requires a number"
-fi
+	read -p "Enter a password with numbers: " password
+	done
 
 #Check if the password contains upper and lower case
-if [[ $password =~ [A-Z] ]]
-then 
-	if [[ $password =~ [a-z] ]]
-	then
-	echo "Password contains upper and lower case"
-	fi
-else
-	echo "Password doesn't contain upper and lower case"
-fi
+while [[ ! $password =~ [A-Z] ]]
+        do
+        echo "Password doesn't contain upper and lower case"
+        read -p "Enter a password with upper and lower case:" password
+        done
+
+while [[ ! $password =~ [a-Z] || ! $password =~ [0-9] || ! ${#password} -ge 8 ]]
+do 
+	read -p "Re-enter a password (Still missing a number, upper and lower case 
+	or less than 8 characters):" password
+done
+
+echo "Password Accepted!"
+
