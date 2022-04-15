@@ -15,8 +15,10 @@ echo "Original: ${array[*]}"
 #Then sort the array as a list
 #The <<< passes the strings back to the original array form
 sorted=($(tr ' ' '\n' <<<"${array[*]}" | sort -n))
+revsort=($(tr ' ' '\n' <<<"${array[*]}" | sort -nr))
 
 echo "Sorted: ${sorted[*]}"
+echo "Reverse Sorted: ${revsort[*]}"
 
 uniq=()
 #This iterates over the sorted array, carrying i
