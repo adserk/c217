@@ -36,7 +36,7 @@ done
 lenarray=${#common[*]}
 
 #Check if length of "common" array  is greater than or equal to one 
-if [[ $lenarray  -ge $1 ]]
+if [[ $lenarray  -ge 1 ]]
 then
 	echo "At least one common element exist"
 	echo "Common element(s): ${common[*]}"
