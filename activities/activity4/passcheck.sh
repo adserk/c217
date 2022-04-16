@@ -1,10 +1,11 @@
 #!/bin/bash
 
-echo "Length should be 8 or more characters 
-The password should contain numbers and letters
-There should be both uppercase and lowercase letters"
+echo "Enter a password where:
+1. The length should be 8 or more characters 
+2. The password should contain numbers and letters
+3. There should be both uppercase and lowercase letters"
 
-read -p "Enter Password: " password
+read -p "Enter a Password: " password
 
 #Checks if the password contains 8 or more characters
 	while [[ ${#password} -lt 8 ]]	
