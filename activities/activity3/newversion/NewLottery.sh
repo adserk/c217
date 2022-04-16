@@ -16,6 +16,7 @@ do
         files+=($i)
 done
 
+#These make sure there are only 1 file of each existing, since if ran on a different day the program will think these file doesn't exist since the file name will change according to the date this code runs
 num1=`ls -d lotterynum* | wc -l`
 num2=`ls -d array10* | wc -l`
 num3=`ls -d array50* | wc -l`
