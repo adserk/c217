@@ -28,14 +28,32 @@ foldername="logs"
 #If folder doesn't create a new file
 if [[ ! "${folders[*]}" =~ "$foldername" ]]
 then
-        echo "Folder doesn't exist. Creating folder '$foldernamei'"
+        echo "Folder doesn't exist. Creating folder '$foldername'"
         mkdir $foldername 
 else
         echo "Folder $foldername already exist"
 fi
 
-touch logs/$LOGFILENAME
 
+fname=()
+for i in logs/*
+do 
+	j="$i"
+	h=`printf '%s\n' "${j//logs\//}"`
+	filename+=($h)	
+	echo "${fname[*]}"
+done
+
+for i in "${fname[@]}"
+do 
+	if [[ ! "$LOGFILENAME" =~ "$i" ]]
+	then
+		echo "File Doesn't Exist. Creating file '$LOGFILENAME'"
+		touch logs/$LOGFILENAME
+	else
+		echo "File Already Exist"
+	fi
+done
 # Need to setup some of the variables we will need
 
 CLIENT="MTHREE"
