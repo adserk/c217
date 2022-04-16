@@ -19,7 +19,7 @@ do
 done
 
 #Sort the array of file numbers from largest to smallest,
-#Largest means lastest since the date format of each file is Year-Month-Day(%Y%m%d)
+#Largest means latest since the date format of each file is Year-Month-Day(%Y%m%d)
 revsorted=($(tr ' ' '\n' <<<"${name[*]}" | sort -nr))
 
 #The first 3 elements of revsorted array (3 latest files) 
