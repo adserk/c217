@@ -1,29 +1,29 @@
 #!/bin/bash
+
 TODAY="date +%Y%m%d"
 filename="file1_`$TODAY`"
 files=()
-
 for i in files/*
 do
-        files+=($i)
+	j="$i"
+        h=`printf '%s\n'"${j//files\/}"`
+	files+=($h)
 done
+#count the number of files that doesn't contain '_'
+count=()
+for i in files/*.txt
+do	
+	#if files array doesn't contain an element with substring '_' then execute the next line 
+        if [[ ! $i =~ ['_'] ]]
+        then
+		echo "Renaming the file: $i"
+		mv -- "$i" "${i%.txt}_`$TODAY`.txt"
+		count+=(1)
 
-#If we run this script on another day then it will think the files doesn't exist and append the files inside the folder as well. Thus need a check if there are files in the folder already or not
-for i in "${files[*]}"
-do 
-#even without any files in the 'files' folder, the for loop earlier  will still appends 'files/*' to the 'files' array 
-#thus need to check if 'files' array has the string '/' or not. If not then that means there are files inside the folder because there will be filenames instead of 'files/*' in the 'files' array 
-if [[ ! "$i" = *"/"* ]] || [[ ! "${files[*]}" =~ "$filename" ]]
+	fi
+done
+#if count is less than 1 then files already exist
+if [[ $count -lt 1 ]]
 then
-	echo "File doesn't exist. Creating files.'"
-	touch files/file{1..3}.txt
-	for f in files/*.txt
-        do 
-	        mv -- "$f" "${f%.txt}_`$TODAY`.txt"
-        done
-
-else
-	 echo "Error: Files already exist"
+	echo "Today's files already exist!"
 fi
-done
-
