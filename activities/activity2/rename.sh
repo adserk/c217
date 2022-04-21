@@ -13,7 +13,7 @@ for i in "${files[*]}"
 do 
 #even without any files in the 'files' folder, the for loop earlier  will still appends 'files/*' to the 'files' array 
 #thus need to check if 'files' array has the string '/' or not. If not then that means there are files inside the folder because there will be filenames instead of 'files/*' in the 'files' array 
-if [[  "$i" = *"/"* ]] && [[ ! "${files[*]}" =~ "$filename" ]]
+if [[ ! "$i" = *"/"* ]] || [[ ! "${files[*]}" =~ "$filename" ]]
 then
 	echo "File doesn't exist. Creating files.'"
 	touch files/file{1..3}.txt
