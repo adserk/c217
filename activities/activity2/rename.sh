@@ -11,6 +11,15 @@ do
 done
 #count the number of files that doesn't contain '_'
 count=()
+for i in files/*
+do
+if [[ ! "${files[*]}" =~ "$filename" ]]
+        then
+                echo "File doesn't exist. Creating files.'"
+                touch files/file{1..3}.txt
+        fi
+done
+
 for i in files/*.txt
 do	
 	#if files array doesn't contain an element with substring '_' then execute the next line 
