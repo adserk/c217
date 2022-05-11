@@ -40,7 +40,7 @@ lottery50=$(grep -w -f files/$FILENAME1 files/$FILENAME2)
 #If lottery10 is greater than zero that means we have a match and therefore won the lottery
 if [[ $lottery50 -gt 0 ]]
 then
-echo "You won today! Your match is $lottery50."
+	echo "You won today! Your match is $lottery50."
 else 
 	echo "You didn't win the lottery today."
 fi
