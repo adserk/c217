@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+read -p "Enter a password: " password
+
+while [[ ! $password =~ [A-Z] ]]
+do 
+read -p "Re-enter password: " password 
+done 
+
+echo "done"
